@@ -1,4 +1,4 @@
- section{
+ *{
     background-color: #051540;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,11 +7,16 @@
 .hero {
   display: flex;
   flex: 1;
-  margin-left: 10px;
+  padding-left: 70px;
 }
 
 .hero-text {
-  margin-top: 80px;
+  margin-top: 110px;
+}
+
+p{
+  line-height: 1.8;
+  padding-top: 15px;
 }
 
 .buttons {
@@ -38,6 +43,7 @@
 .contact-btn {
   padding: 7px 17px;
   border-radius: 4px;
+  margin-left: 20px;
   border: 1px solid white;
   cursor: pointer;
 }
@@ -54,5 +60,5 @@
 .hero-image {
   width: 450px;
   height: 420px;
-  margin-left: 200px;
+  margin-left: 200px;      
 }
