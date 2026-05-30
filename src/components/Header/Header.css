@@ -1,1 +1,15 @@
+section{
+    background-color: #051540;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.header{
+    margin-bottom: 10px;
+    padding-left: 70px;
+}
+
+.logo{
+   padding-top: 18px;
+}
 
