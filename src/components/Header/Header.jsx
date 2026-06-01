@@ -1,5 +1,5 @@
 import "./Header.css";
- import logo from "./graphics.png";
+import logo from "./graphics.png";
 
 
 const Header = () => {
@@ -12,5 +12,7 @@ const Header = () => {
   );
 };
 
+
 export default Header;
+
 
