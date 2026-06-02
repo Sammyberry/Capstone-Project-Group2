@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Footer.css";
 
 const Footer = () => {
   const contributors = [
@@ -14,12 +14,14 @@ const Footer = () => {
     { name: "Ngozi", username: "Blessing-Udo-hub" },
     { name: "Chiemela", username: "lilghost999" },
     { name: "Malachy", username: "malachyokafor7-cell" },
+    { name: "Bamidele", username: "skillaim" },
   ];
 
   return (
     <footer>
-      <h3>About</h3>
-      <p>Group members who worked on this project:</p>
+      <h3>About this project:</h3>
+      <p>This is a collaborative React web application that explores our solar system through planetary data, interactive visuals, and dynamic content fetched from external APIs.</p>
+      <p className="team">Meet our team members:</p>
 
       <div className="contributors-list">
         {contributors.map((member) => (
@@ -40,19 +42,24 @@ const Footer = () => {
       </div>
 
       <hr />
-      <p>&copy; 2026 Design by Amaka & Ifeoma A.</p>
-      <p>
-        Built by{" "}
-        <a
-          href="https://github.com/Sammyberry/Capstone-Project-Group2"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Group 2
-        </a>
-        . All rights reserved.
-      </p>
-      <p>TS Academy</p>
+
+      <div className="footer-info">
+        <div className="footer-left">
+          <p>&copy; 2026 Design by Amaka & Ifeoma A.</p>
+          <p>
+            Built by{" "}
+            <a
+              href="https://github.com/Sammyberry/Capstone-Project-Group2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Group 2
+            </a>
+            . All rights reserved.
+          </p>
+        </div>
+        <p className="footer-right">TS Academy</p>
+      </div>
     </footer>
   );
 };
