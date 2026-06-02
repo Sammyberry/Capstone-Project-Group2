@@ -1,11 +1,10 @@
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
+import React from "react";
+import Image from "./components/Image/Image.jsx";
 
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
+      <Image />
     </>
   );
 }
