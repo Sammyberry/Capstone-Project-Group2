@@ -10,10 +10,10 @@ function ContactForm() {
   });
 
   const [successMessage, setSuccessMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-
     setFormData((prev) => ({
       ...prev,
       [name]: value,
@@ -22,11 +22,15 @@ function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    // Validation
+    if (formData.message.length > 100) {
+      setSuccessMessage("Message must not exceed 100 characters");
+      return;
+    }
 
-    // Step 1: Log form values
-    console.log("Form Data:", formData);
+    setIsLoading(true);
 
-    // Step 2: Send as form-urlencoded
     const formBody = new URLSearchParams({
       fullName: formData.fullName,
       phoneNumber: formData.phoneNumber,
@@ -46,36 +50,25 @@ function ContactForm() {
         }
       );
 
-      // Step 3: Log response object and status
-      console.log("Response Object:", response);
-      console.log("Response Status:", response.status);
-
-      // Step 4: Log response text
-      const responseText = await response.text();
-      console.log("Response Text:", responseText);
-
       if (response.status === 200) {
-        setSuccessMessage(
-          "Your message has been submitted successfully!"
-        );
-
+        setSuccessMessage("Your message has been submitted successfully!");
         setFormData({
           fullName: "",
           phoneNumber: "",
           email: "",
           message: "",
         });
+        
+        // Auto-clear success message after 5 seconds
+        setTimeout(() => setSuccessMessage(""), 5000);
       } else {
-        setSuccessMessage(
-          `Submission failed. Server returned status ${response.status}`
-        );
+        setSuccessMessage(`Submission failed. Server returned status ${response.status}`);
       }
     } catch (error) {
       console.error("Submission Error:", error);
-
-      setSuccessMessage(
-        "Submission failed. Please check your network connection."
-      );
+      setSuccessMessage("Submission failed. Please check your network connection.");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -83,7 +76,6 @@ function ContactForm() {
     <section className="contact-section">
       <div className="contact-header">
         <h2>Have Questions About Planetary Science?</h2>
-
         <p>
           Interested in learning more about space, astronomy, or how
           planetary data is collected and analyzed? Reach out and we'll
@@ -94,7 +86,6 @@ function ContactForm() {
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="fullName">Full Name*</label>
-
           <input
             type="text"
             id="fullName"
@@ -108,7 +99,6 @@ function ContactForm() {
 
         <div className="form-group">
           <label htmlFor="email">Email*</label>
-
           <input
             type="email"
             id="email"
@@ -122,7 +112,6 @@ function ContactForm() {
 
         <div className="form-group">
           <label htmlFor="phoneNumber">Phone Number*</label>
-
           <input
             type="tel"
             id="phoneNumber"
@@ -136,23 +125,24 @@ function ContactForm() {
 
         <div className="form-group">
           <label htmlFor="message">Message*</label>
-
           <textarea
             id="message"
             name="message"
             value={formData.message}
             placeholder="Enter your message"
             onChange={handleChange}
+            maxLength="100"
             required
           ></textarea>
-
           <p className="character-count">
             {formData.message.length}/100 characters
           </p>
         </div>
 
         <div className="submit-wrapper">
-          <button type="submit">Submit</button>
+          <button type="submit" disabled={isLoading}>
+            {isLoading ? "Submitting..." : "Submit"}
+          </button>
         </div>
       </form>
 
