@@ -1,11 +1,9 @@
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-
+import React from 'react';
+import PlanetaryTable from './components/PlanetTable/PlanetTable';
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
+      <PlanetaryTable />
     </>
   );
 }
