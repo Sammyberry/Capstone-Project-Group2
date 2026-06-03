@@ -1,5 +1,5 @@
 import "./Hero.css";
- import earth from "./earth.png";
+import earth from "./earth.png";
 
 const Hero = () => {
   return (
