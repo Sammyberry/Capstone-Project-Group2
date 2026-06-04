@@ -1,5 +1,5 @@
 import React from "react";
-import "./PlanetTable";
+import "./PlanetTable.css";
 
 const PlanetaryTable = () => {
   return (
