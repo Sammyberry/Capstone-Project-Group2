@@ -1,11 +1,9 @@
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
+import VideoSection from './components/Video/Video';
 
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
+      <VideoSection/>
     </>
   );
 }
