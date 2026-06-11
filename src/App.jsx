@@ -1,13 +1,10 @@
+import React from "react";
+import ImageSection from "./components/Image/Image.jsx";
+
 function App() {
   return (
     <>
-      <header>Header</header>
-      <main>
-        <section>Hero Section</section>
-        <section>Planet Section</section>
-        <section>Contact Form</section>
-      </main>
-      <footer>Footer</footer>
+      <ImageSection />
     </>
   );
 }
