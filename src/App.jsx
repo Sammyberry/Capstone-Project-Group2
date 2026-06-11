@@ -1,9 +1,9 @@
 import React from 'react';
-import PlanetaryTable from './components/PlanetTable/PlanetTable';
+import Footer from './components/Footer/Footer';
 function App() {
   return (
     <>
-      <PlanetaryTable />
+      <Footer />
     </>
   );
 }
