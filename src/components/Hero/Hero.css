@@ -1,1 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  margin: 0;
+  color: white;
+  background: url(dotStyle.svg), #051540;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 8%;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.explore-btn {
+  padding: 12px 28px;
+  background-color: #164BAF;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.contact-btn {
+  padding: 12px 28px;
+  border: 1px solid white;
+  border-radius: 8px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.explore-btn:hover,
+.contact-btn:hover {
+  opacity: 0.8;
+  transition: 0.3s ease;
+}
+
+.hero-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.hero-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+/*Tablet*/
+@media (max-width: 1024px) {
+  .hero {
+    padding: 20px 6%;
+    gap: 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .hero-text p {
+    width: 302px;
+    height: 174px;
+    font-size: 18px;
+    font-style: medium;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: -2%;
+  }
+
+  .hero-image {
+  width: 299px;
+  top: 53px;
+  left: 56px;
+  }
+}
+
+/*Mobile*/
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 20px 5%;
+    gap: 20px;
+    min-height: auto;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .buttons {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .explore-btn,
+  .contact-btn {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+
+  .hero-image {
+    max-width: 220px;
+  }
+}
+
 
