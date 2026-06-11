@@ -1,9 +1,9 @@
-import VideoSection from './components/Video/Video';
-
+import React from 'react';
+import PlanetaryTable from './components/PlanetTable/PlanetTable';
 function App() {
   return (
     <>
-      <VideoSection/>
+      <PlanetaryTable />
     </>
   );
 }
