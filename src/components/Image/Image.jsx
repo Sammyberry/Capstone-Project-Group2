@@ -52,40 +52,44 @@ const planets = [
 export default function ImageSection() {
   return (
     <section className="img-section">
-      <div className="img-section__header">
-        <h2 className="img-section__title">
-          Visualizing the Differences Between Planets
-        </h2>
+      <div className="img-section__container">
+        <div className="img-section__header">
+          <h2 className="img-section__title">
+            Visualizing the Differences Between Planets
+          </h2>
 
-        <p className="img-section__paragraph">
-          Each planet in our solar system has unique physical characteristics.
-          Visual comparisons help highlight how vastly different terrestrial
-          planets are from gas giants and ice giants.
-        </p>
-      </div>
+          <p className="img-section__paragraph">
+            Each planet in our solar system has unique physical characteristics.
+            Visual comparisons help highlight how vastly different terrestrial
+            planets are from gas giants and ice giants.
+          </p>
+        </div>
 
-      <div className="img-section__grid">
-        {planets.map((planet, index) => (
-          <div
-            key={planet.planet}
-            className={`img-section__grid-item ${
-              index === planets.length - 1 ? "img-section__grid-item--last" : ""
-            }`}
-          >
-            <div className="imageWrapper">
-              <img src={planet.image} alt={planet.planet} loading="lazy" />
+        <div className="img-section__grid">
+          {planets.map((planet, index) => (
+            <div
+              key={planet.planet}
+              className={`img-section__grid-item ${
+                index === planets.length - 1
+                  ? "img-section__grid-item--last"
+                  : ""
+              }`}
+            >
+              <div className="imageWrapper">
+                <img src={planet.image} alt={planet.planet} loading="lazy" />
+              </div>
+
+              <div className="img-section__grid-caption">
+                <h3 className="img-section__planet-name">{planet.planet}</h3>
+
+                <p className="img-section__grid-text">
+                  <span className="descriptionTag">Distance from Sun:</span>{" "}
+                  {planet.distanceFromSun} million km
+                </p>
+              </div>
             </div>
-
-            <div className="img-section__grid-caption">
-              <h3 className="img-section__planet-name">{planet.planet}</h3>
-
-              <p className="img-section__grid-text">
-                <span className="descriptionTag">Distance from Sun:</span>{" "}
-                {planet.distanceFromSun} million km
-              </p>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

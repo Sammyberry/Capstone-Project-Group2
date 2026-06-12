@@ -1,0 +1,230 @@
+
+footer {
+    background-color: #051540;
+    padding: 30px 60px;
+    font-family: 'Inter', sans-serif;
+}
+
+footer h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    color: #CBD5E1;
+    margin: 4px 0;
+}
+
+footer .team {
+    font-family: 'Redressed', cursive;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #2DD4BF;
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 20px 0;
+}
+
+.contributors-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.contributor-card {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s;
+    position: relative;
+    flex: 0 0 auto
+}
+
+.contributor-card:hover {
+    transform: translateY(-5px);
+}
+
+.contributor-card::after {
+    content: "View GitHub Profile";
+    position: absolute;
+    bottom: -28px;
+    color: #2DD4BF;
+    padding: 12px 8px;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    font-style: italic;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.contributor-card:hover::after {
+    opacity: 1;
+}
+
+.contributor-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #051540;
+    object-fit: cover;
+    cursor: pointer;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+.contributor-card:hover img {  
+    border-color: #2DD4BF;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.contributor-card p {
+    font-family: 'Redressed', cursive;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    color: #2DD4BF;
+}
+
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin: 2px 0;
+    font-size: 16px;
+    color: #CBD5E1;
+}
+.footer-left p:first-child {
+    margin-bottom: 8px;
+}
+
+.footer-left a {
+    color: #CBD5E1;
+    text-decoration: underline;
+}
+
+.footer-right {
+    font-size: 16px;
+    font-weight: 600;
+    color: #CBD5E1;
+}
+
+/* ── Tablet Portrait (max 768px) ── */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px 30px;
+    }
+
+    footer h3 {
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+
+    footer .team {
+        font-size: 16px;
+        margin-top: 12px;
+    }
+
+    .contributors-list {
+        gap: 15px;
+    }
+
+    .contributor-card img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .contributor-card p {
+        font-size: 14px;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .footer-left p {
+        font-size: 14px;
+    }
+
+    .footer-right {
+        font-size: 14px;
+    }
+}
+
+/* ── Mobile (max 480px) ── */
+@media (max-width: 480px) {
+    footer {
+        padding: 20px;
+    }
+
+    footer h3 {
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    footer .team {
+        font-size: 14px;
+        margin-top: 6px;
+    }
+
+    .contributors-list {
+        gap: 10px;
+    }
+
+    .contributor-card img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .contributor-card p {
+        font-size: 12px;
+    }
+
+    .contributor-card::after {
+        font-size: 8px;
+        bottom: -24px;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .footer-left p {
+        font-size: 12px;
+    }
+
+    .footer-right {
+        font-size: 12px;
+    }
+}
