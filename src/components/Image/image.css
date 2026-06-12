@@ -1,26 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Inter, sans-serif;
-}
-
-body {
-    font-family: Inter, sans-serif;
-}
 
 .img-section {
-    width: 1200px;
-    margin: 0 auto;
+    width: 100%;
     padding: 40px 20px;
     background: #f2f7ff;
+}
+
+.img-section__container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .img-section__header {
     display: flex;
     flex-direction: column;
-    
     align-items: center;
     margin-bottom: 30px;
 }
@@ -71,8 +63,9 @@ body {
 .img-section__grid-item img {
     width: 100%;
     height: 250px;
-    display: block;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: #000;
+
 }
 
 .img-section__grid-caption {

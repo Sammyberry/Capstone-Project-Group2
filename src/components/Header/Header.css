@@ -1,6 +1,8 @@
+/*HEADER CSS*/
 .header {
   width: 100%;
   padding: 20px 8%;
+  background-color: #051540;
 }
 
 .logo img {
@@ -9,9 +11,6 @@
   height: auto;
   display: block;
 }
-
-
-
 
 /* Tablet */
 @media (max-width: 1024px) {

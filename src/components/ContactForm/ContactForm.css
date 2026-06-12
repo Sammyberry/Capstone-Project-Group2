@@ -40,6 +40,11 @@
   margin-bottom: 6px;
 }
 
+.required {
+  color: red;
+  margin-left: 2px;
+}
+
 .form-group input,
 .form-group textarea {
   width: 100%;
@@ -74,10 +79,10 @@
   margin-top: 12px;
 }
 
-button {
+.submit-wrapper button {
   width: 220px;
   height: 44px;
-  background: #1f5fd1;
+  background: #164BAF;
   color: white;
   border: none;
   border-radius: 4px;
@@ -87,8 +92,8 @@ button {
   transition: background 0.2s ease;
 }
 
-button:hover {
-  background: #184db0;
+.submit-wrapper button:hover {
+  background: #1f5fd1;
 }
 
 @media (max-width: 768px) {
@@ -105,7 +110,7 @@ button:hover {
     margin-top: 8px;
   }
 
-  button {
+  .submit-wrapper button {
     width: 100%;
   }
 

@@ -19,9 +19,9 @@ const Footer = () => {
 
   return (
     <footer>
-      <h3>About this project:</h3>
-      <p>This is a collaborative React web application that explores our solar system through planetary data, interactive visuals, and dynamic content fetched from external APIs.</p>
-      <p className="team">Meet our team members:</p>
+      <h3>About</h3>
+      <p>This project is a collaborative React web application that explores our solar system through planetary data, interactive visuals, and dynamic content fetched from external APIs.</p>
+      <p className="team">Meet the team members:</p>
 
       <div className="contributors-list">
         {contributors.map((member) => (

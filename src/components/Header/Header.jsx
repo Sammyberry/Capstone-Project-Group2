@@ -1,7 +1,6 @@
 import "./Header.css";
 import logo from "./graphics.png";
 
-
 const Header = () => {
   return (
     <header className="header">
@@ -11,6 +10,5 @@ const Header = () => {
     </header>
   );
 };
-
 
 export default Header;
