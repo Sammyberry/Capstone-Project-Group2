@@ -1,7 +1,7 @@
 # Capstone Project: Planetary Science Web Application
 
 ## 🌐 Live Deployment & Repository
-*   **Production Deployment Link:** *[Insert your Vercel/Netlify link here]*
+*   **Production Deployment Link:** *https://ts-group2-planetary-science.netlify.app/*
 *   **GitHub Repository:** [Group 2 Capstone Repository](https://github.com/Sammyberry/Capstone-Project-Group2)
 
 ---
