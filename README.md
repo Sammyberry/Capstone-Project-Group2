@@ -14,23 +14,23 @@ This application is a collaborative React web application that explores our sola
 ## 👥 Team Members & Task Distribution
 
 ### 🛠️ Leadership & Core Operations
-*   **Sammy (Team Lead)** 
+*   **Samuel Akinbolawa (Team Lead)** 
     *   **Role:** Project coordinator, repository manager, and workflow supervisor. Responsible for task delegation, setting ground rules, resolving global merge/CSS conflicts, and managing repository deployments.
     *   **Feature Built:** Styled and structured the comprehensive **Footer Section**.
-*   **John** ([Jonnywondercodes](https://github.com/Jonnywondercodes))
+*   **John Iyanuoluwa Owolabi** ([Jonnywondercodes](https://github.com/Jonnywondercodes))
     *   **Role:** Assistant Team Lead. Assisted in managing progress tracking, workflow continuity, and peer review.
     *   **Feature Built:** Structured and developed the **Planet Image Grid Section**.
-*   **Akinade** ([DevKin1](https://github.com/DevKin1))
+*   **Akinade Fuwad Adebayo** ([DevKin1](https://github.com/DevKin1))
     *   **Role:** Quality Assurance (QA) Engineer. Oversaw code quality, bug testing, layout integrity, and code verification before staging.
     *   **Feature Built:** Managed the **Fetch API Integration** to dynamically retrieve and distribute planetary raw data across components.
 
 ### 💻 Component Developers
 *   **Darasimi** ([K-coder85](https://github.com/K-coder85)) — Developed the **Hero Section** (Call-to-actions & layout matching).
-*   **Ruth** ([makimprowess-jpg](https://github.com/makimprowess-jpg)) — Developed the global **Header**.
-*   **Daniel** ([dantoba](https://github.com/dantoba)) & **Damilola** ([A-kehinde](https://github.com/A-kehinde)) — Co-developed the **Video Section** (Custom standalone, muted, looping video layer).
-*   **Nelson** ([Hunchog33](https://github.com/Hunchog33)) & **Malachy** ([malachyokafor7-cell](https://github.com/malachyokafor7-cell)) — Co-developed the **Planet Data Table Section**.
-*   **Chiemela** ([lilghost999](https://github.com/lilghost999)) & **Bamidele** ([skillaim](https://github.com/skillaim)) — Co-developed the **Contact Us Form Section** (Validation & endpoint submission handling).
-*   **Ngozi** ([Blessing-Udo-hub](https://github.com/Blessing-Udo-hub)) — Collaborated on the layout, structure, and link validation of the **Footer Section**.
+*   **Ruth Effiom Effiong** ([makimprowess-jpg](https://github.com/makimprowess-jpg)) — Developed the global **Header**.
+*   **Daniel Oloruntoba** ([dantoba](https://github.com/dantoba)) & **Damilola Kehinde Adeleke** ([A-kehinde](https://github.com/A-kehinde)) — Co-developed the **Video Section** (Custom standalone, muted, looping video layer).
+*   **Nelson Ayoola Adeniran** ([Hunchog33](https://github.com/Hunchog33)) & **Malachy Okafor** ([malachyokafor7-cell](https://github.com/malachyokafor7-cell)) — Co-developed the **Planet Data Table Section**.
+*   **Chiemela Ohabughiro** ([lilghost999](https://github.com/lilghost999)) & **Bamidele Elijah** ([skillaim](https://github.com/skillaim)) — Co-developed the **Contact Us Form Section** (Validation & endpoint submission handling).
+*   **Onwuchekwa Ngozi Blessing Udo** ([Blessing-Udo-hub](https://github.com/Blessing-Udo-hub)) — Collaborated on the layout, structure, and link validation of the **Footer Section**.
 
 ---
 
