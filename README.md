@@ -25,11 +25,11 @@ This application is a collaborative React web application that explores our sola
     *   **Feature Built:** Managed the **Fetch API Integration** to dynamically retrieve and distribute planetary raw data across components.
 
 ### 💻 Component Developers
-*   **Darasimi** ([K-coder85](https://github.com/K-coder85)) — Developed the **Hero Section** (Call-to-actions & layout matching).
+*   **Sobukola Oluwadarasimi Olumuyiwa** ([K-coder85](https://github.com/K-coder85)) — Developed the **Hero Section** (Call-to-actions & layout matching).
 *   **Ruth Effiom Effiong** ([makimprowess-jpg](https://github.com/makimprowess-jpg)) — Developed the global **Header**.
 *   **Daniel Oloruntoba** ([dantoba](https://github.com/dantoba)) & **Damilola Kehinde Adeleke** ([A-kehinde](https://github.com/A-kehinde)) — Co-developed the **Video Section** (Custom standalone, muted, looping video layer).
 *   **Nelson Ayoola Adeniran** ([Hunchog33](https://github.com/Hunchog33)) & **Malachy Okafor** ([malachyokafor7-cell](https://github.com/malachyokafor7-cell)) — Co-developed the **Planet Data Table Section**.
-*   **Chiemela Ohabughiro** ([lilghost999](https://github.com/lilghost999)) & **Bamidele Elijah** ([skillaim](https://github.com/skillaim)) — Co-developed the **Contact Us Form Section** (Validation & endpoint submission handling).
+*   **Chiemela Kingsley Ohabughiro** ([lilghost999](https://github.com/lilghost999)) & **Bamidele Elijah** ([skillaim](https://github.com/skillaim)) — Co-developed the **Contact Us Form Section** (Validation & endpoint submission handling).
 *   **Onwuchekwa Ngozi Blessing Udo** ([Blessing-Udo-hub](https://github.com/Blessing-Udo-hub)) — Collaborated on the layout, structure, and link validation of the **Footer Section**.
 
 ---
